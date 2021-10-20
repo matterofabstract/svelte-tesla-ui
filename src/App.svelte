@@ -1,34 +1,24 @@
 <script>
-	export let name;
+	import BootScreen from './screens/BootScreen.svelte';
+	import Home from './screens/Home.svelte';
+
+	import { screenSlug } from './store.js';
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+{#if $screenSlug === 'boot'}
+	 <BootScreen />
+{/if}
+
+{#if $screenSlug === 'home'}
+	<Home />
+{/if}
 
 <style global>
 	@tailwind base;
   @tailwind components;
   @tailwind utilities;
 
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
+	body {
+		@apply transition-colors duration-1000 bg-black;
 	}
 </style>
