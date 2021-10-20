@@ -25,11 +25,11 @@
   });
 
   onDestroy(() => {
-    document.body.style.backgroundColor = '#fff';
+    document.body.style.backgroundColor = '#eee';
   });
 </script>
 
 <main class="flex flex-col items-center justify-center h-screen w-52 mx-auto">
-  <img src="/assets/tesla-logo.svg" alt="Tesla" class="mb-12 mx-auto" />
+  <img src="/assets/tesla-logo.svg" alt="Tesla" class="mb-12 mx-auto w-32" />
   <ProgressBar current={loadingProgress} />
 </main>

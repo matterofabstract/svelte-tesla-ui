@@ -1,0 +1,12 @@
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="GUI-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Parked---At-Charging-Station---Trunk-Open" transform="translate(-1410.000000, -1115.000000)">
+            <g id="main-control-bar-/-light" transform="translate(0.000000, 1072.000000)">
+                <g id="music" transform="translate(1410.000000, 43.000000)">
+                    <polygon id="Background" points="0 0 48 0 48 48 0 48"></polygon>
+                    <path d="M39,3.5 L15,9.5 L15,17.5 C15,29.4996667 15,35.4995 15,35.4995 C14.16406,34.8721 13.12598,34.5 12,34.5 C9.23828,34.5 7,36.7388 7,39.5 C7,42.2612 9.23828,44.5 12,44.5 C14.76172,44.5 17,42.2612 17,39.5 C17,39.5 17,32 17,17 L37,12 C37,24.333 37,30.4995 37,30.4995 C36.1641,29.8721 35.126,29.5 34,29.5 C31.2383,29.5 29,31.7388 29,34.5 C29,37.2612 31.2383,39.5 34,39.5 C36.7617,39.5 39,37.2612 39,34.5 C39,34.5 39,26.8333333 39,11.5 L39,4.5 L39,3.5 Z" id="Union" fill="#545454"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
