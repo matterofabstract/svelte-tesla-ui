@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <polygon id="Path" points="0 0 48 0 48 48 0 48"></polygon>
+            <rect id="Rectangle" stroke="#545454" stroke-width="2" stroke-linecap="square" x="7" y="7" width="34" height="34" rx="9.6768"></rect>
+            <path d="M24,21.375 L18.4,26.625 M24,21.375 L29.6,26.625" id="Combined-Shape" stroke="#545454" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

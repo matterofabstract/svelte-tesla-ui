@@ -19,7 +19,6 @@
   @tailwind utilities;
 
 	body {
-		@apply transition-colors duration-1000;
-		/* bg-black; */
+		@apply transition-colors duration-1000 bg-black;
 	}
 </style>
