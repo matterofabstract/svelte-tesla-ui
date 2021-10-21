@@ -11,7 +11,7 @@
   const loadEverything = () => {
     loadingProgress += Math.floor(Math.random() * (4 - 1 + 1) + 1)
     if (loadingProgress >= 100) {
-      screenSlug.set('home');
+      screenSlug.set('main');
     } else {
       setTimeout(() => {
         loadEverything();
@@ -29,7 +29,12 @@
   });
 </script>
 
-<main class="flex flex-col items-center justify-center h-screen w-52 mx-auto">
-  <img src="/assets/tesla-logo.svg" alt="Tesla" class="mb-12 mx-auto w-32" />
+<main class="flex flex-col items-center justify-center h-screen mx-auto w-52">
+  <img
+    on:click={() => screenSlug.set('main')}
+    src="/assets/tesla-logo.svg"
+    class="w-32 mx-auto mb-12"
+    alt="Tesla"
+  />
   <ProgressBar current={loadingProgress} />
 </main>

@@ -1,54 +1,27 @@
 <script>
-  import { onMount } from 'svelte';
-  import { fly, fade } from 'svelte/transition';
-
+  import { fly } from 'svelte/transition';
 	import MenuBarTemperature from '../components/MenuBarTemperature.svelte';
   import MenuBarVolume from '../components/MenuBarVolume.svelte';
-
-  let items = [
-    { label: 'Car', slug: 'car'},
-    { label: 'Music', slug: 'music'},
-    { label: 'Cameras', slug: 'camera'},
-    { label: 'Windshields', slug: 'windshield'},
-    { label: 'More', slug: 'more'},
-    { label: 'Drivers Heated Seat', slug: 'seat'},
-    { label: 'Climate Control', slug: 'climate'},
-    { label: 'Temperature', slug: 'temperature', Component: MenuBarTemperature},
-    { label: 'Passengers Heated Seat', slug: 'seat', classList: 'scale-x-[-1]'},
-    { label: 'Front Defrost', slug: 'defrost-front'},
-    { label: 'Rear Defrost', slug: 'defrost-rear'},
-    { label: 'Volume', slug: 'volume', Component: MenuBarVolume},
-  ];
-
-  let loaded = false;
-
-  onMount(() => {
-    loaded = true;
-  });
 </script>
 
-{#if loaded}
-<div in:fly={{ y: 100, duration: 1000, delay: 300 }} out:fly={{ y: -10, duration: 300 }}>
-  <ul>
-    {#each items as {label, slug, classList='', Component}}
-    <li>
-      {#if Component}
-        <Component />
-      {:else}
-        <img src={`/assets/ico-${slug}.svg`} alt={label} class={classList} />
-      {/if}
-    </li>
-    {/each}
+  <ul in:fly={{ y: 100, duration: 1000, delay: 300 }}>
+    <li><img src="/assets/ico-car.svg" alt="Main Menu"/></li>
+    <li><img src="/assets/ico-music.svg" alt="Main Menu"/></li>
+    <li><img src="/assets/ico-camera.svg" alt="Main Menu"/></li>
+    <li><img src="/assets/ico-windshield.svg" alt="Main Menu"/></li>
+    <li><img src="/assets/ico-more.svg" alt="More..."/></li>
+    <li><img src="/assets/ico-seat.svg" alt="Driver Seat Heater"/></li>
+    <li><img src="/assets/ico-climate.svg" alt="Climate Control"/></li>
+    <li><MenuBarTemperature /></li>
+    <li><img src="/assets/ico-seat.svg" alt="Passenger Seat Heater" class="scale-x-[-1]"/></li>
+    <li><img src="/assets/ico-defrost-front.svg" alt="Defrost Front"/></li>
+    <li><img src="/assets/ico-defrost-rear.svg" alt="Defrost Rear"/></li>
+    <li><MenuBarVolume /></li>
   </ul>
-</div>
-{/if}
 
 <style>
-  div {
-    @apply h-full w-full;
-  }
   ul {
-    @apply flex justify-evenly items-center border-t-2 border-gray-200 h-full;
+    @apply h-full w-full flex justify-evenly items-center border-t-2 border-gray-200;
   }
   li {
     @apply block;

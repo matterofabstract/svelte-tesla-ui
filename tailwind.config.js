@@ -10,7 +10,7 @@ module.exports = {
       ],
     },
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // 'media', 'class', or false
   theme: {
     extend: {},
   },

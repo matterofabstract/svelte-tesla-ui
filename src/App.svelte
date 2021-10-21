@@ -1,17 +1,12 @@
 <script>
 	import BootScreen from './screens/BootScreen.svelte';
-	import Home from './screens/Home.svelte';
+	import MainScreen from './screens/MainScreen.svelte';
 
 	import { screenSlug } from './store.js';
 </script>
 
-{#if $screenSlug === 'boot'}
-	 <BootScreen />
-{/if}
-
-{#if $screenSlug === 'home'}
-	<Home />
-{/if}
+{#if $screenSlug === 'boot'}<BootScreen />{/if}
+{#if $screenSlug === 'main'}<MainScreen />{/if}
 
 <style global>
 	@tailwind base;
