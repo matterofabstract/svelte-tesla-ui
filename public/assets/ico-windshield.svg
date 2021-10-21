@@ -1,7 +1,7 @@
 <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g>
-            <polygon id="Path" points="0 0 48 0 48 48 0 48"></polygon>
+            <polygon points="0 0 48 0 48 48 0 48"></polygon>
             <path d="M14.4523486,33.4079256 L10.5408664,33.4079256 L3,16.6860994 C7.25749397,11.5620331 14.0442757,9 23.3603451,9 C32.6764145,9 39.8896328,11.5620331 45,16.6860994 L37.3344492,33.4079256 C34.5947536,33.5712207 32.3674674,33.2974313 30.6525903,32.5865574 C28.9377133,31.8756834 26.5069649,31.6714517 23.3603451,31.9738623 L21.3281627,31.9738623 M15.3124705,16.9447306 L24.9791023,42" stroke="#545454" stroke-width="2.88" stroke-linecap="square"></path>
         </g>
     </g>
