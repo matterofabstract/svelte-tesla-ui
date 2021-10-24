@@ -2,14 +2,21 @@
   import { fly } from 'svelte/transition';
 	import MenuBarTemperature from '../components/MenuBarTemperature.svelte';
   import MenuBarVolume from '../components/MenuBarVolume.svelte';
+  import MoreDrawer from '../components/MoreDrawer.svelte';
+
+  import { showMoreDrawer } from '../store';
 </script>
 
-  <ul in:fly={{ y: 100, duration: 1000, delay: 300 }}>
-    <li><img src="/assets/ico-car.svg" alt="Main Menu"/></li>
+<MoreDrawer />
+
+<ul in:fly={{ y: 100, duration: 1000, delay: 300 }}>
+  <li><img src="/assets/ico-car.svg" alt="Main Menu"/></li>
     <li><img src="/assets/ico-music.svg" alt="Main Menu"/></li>
     <li><img src="/assets/ico-camera.svg" alt="Main Menu"/></li>
     <li><img src="/assets/ico-windshield.svg" alt="Main Menu"/></li>
-    <li><img src="/assets/ico-more.svg" alt="More..."/></li>
+    <li on:click={() => showMoreDrawer.set(!$showMoreDrawer)} class="transition-all duration-75 cursor-pointer" style={`opacity: ${$showMoreDrawer ? 0.7 : 1}`}>
+      <img src="/assets/ico-more.svg" alt="More..."/>
+    </li>
     <li><img src="/assets/ico-seat.svg" alt="Driver Seat Heater"/></li>
     <li><img src="/assets/ico-climate.svg" alt="Climate Control"/></li>
     <li><MenuBarTemperature /></li>
@@ -21,7 +28,8 @@
 
 <style>
   ul {
-    @apply h-full w-full flex justify-evenly items-center border-t-2 border-gray-200;
+    background-color: #eee;
+    @apply h-full w-full flex justify-evenly items-center border-t-2 border-gray-200 z-50 relative;
   }
   li {
     @apply block;

@@ -22,7 +22,7 @@
       <HeaderMenuTray />
     </div>
   </div>
-  <div class="flex-grow-0 h-24">
+  <div class="relative flex-grow-0 h-24">
     <MenuBar />
   </div>
 </div>

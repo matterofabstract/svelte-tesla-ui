@@ -14,13 +14,18 @@ export const screenSlug = writable('boot');
 export const batteryCharge = writable(69);
 
 /**
+ * User Profiles
+ */
+export const activeProfileName = writable('Ben');
+
+/**
  * MenuBar
  */
 export const showCarMenu = writable(false);
 export const showMusicMenu = writable(false);
 export const showCameraMenu = writable(false);
 export const showWindshieldMenu = writable(false);
-export const showMoreMenu = writable(false);
+export const showMoreDrawer = writable(false);
 export const showDriverSeatMenu = writable(false);
 export const showClimateMenu = writable(false);
 export const showTemperatureMenu = writable(false);

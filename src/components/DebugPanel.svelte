@@ -8,7 +8,7 @@
       <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
         <h3 class="text-lg font-medium leading-6 text-gray-900" id="modal-title">Sandbox Controls</h3>
         <div class="mt-2">
-          <p class="mb-6 text-sm text-gray-500">Fuck around with shit using these controls. Try and get yourself hurt, you little fuuuuck.</p>
+          <p class="mb-6 text-sm text-gray-500">Fuck around with shit using these controls.</p>
 
           <label class="block text-xs font-bold text-gray-600">Battery Charge</label>
           <input type="range" bind:value={$batteryCharge} />

@@ -33,7 +33,7 @@
   <img
     on:click={() => screenSlug.set('main')}
     src="/assets/tesla-logo.svg"
-    class="w-32 mx-auto mb-12"
+    class="w-32 mx-auto mb-12 select-none"
     alt="Tesla"
   />
   <ProgressBar current={loadingProgress} />
